@@ -29,15 +29,17 @@ if you don't specify the value to return. ___2___ can be standard data types suc
 dictionary, tuple, and ___4___ or can be more complicated such as objects and 
 lambda functions. """ 
 
-# I'm afraid this isn't that hard - sort of brain dead and want to celebrate my first (significant) working program ;)
 hard_qnum = ["___1___", "___2___", "___3___", "___4___", "___5___"]
-hard_a = ["construct", "instructions", "for", "function", "return"]
+hard_a = ["global", "docstrings", "lower", "function", "return"]
 assert len(hard_qnum) == len(hard_a)
 hard_responses = ["", "", "", "", ""]
 assert len(hard_responses) == len(hard_qnum)
-hard_quiz = """Loops are the essential ___1___ for executing a sequence of ___2___ more than once.  
-The most common loop structures are while loops and ___3___ loops.  We use ___4___s to 
-break a program into logical, manageable chunks.  A ___5___ statement ends a ___4___ right away."""
+hard_quiz = """Here are a few python best-practices I learned doing this project:
+Avoid ___1___ variables, as they are "so notoriously problematic, that some programmers call them evil".
+In writing comments, it's best to use ___2___, which allows users to call your function comments using help().  
+To avoid data input errors from the user entering "Easy" or "EASY" (vs. the correct "easy"), use python's ___3___() method.  
+We use ___4___s to break a program into logical, manageable chunks.  
+A ___5___ statement ends a ___4___ right away."""
 
 """ Initialize list of lists for the quiz.
 
